@@ -2,16 +2,16 @@
 
 void main()
 {
-	 int a,b;
+	 int a,b,c;
 	 printf("Enter the two number\n");
 	 scanf("%d",&a);
 	 scanf("%d",&b);
 	 
 	 
 
-	 a =a+b;
-	 b =a-b;
-	 a =a-b;
+	 c =a;
+	 a =b;
+	 b =c;
 	 
 	 printf("a --> %d\n",a);
 	 printf("b --> %d",b);
