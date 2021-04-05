@@ -2,20 +2,21 @@
 
 void main()
 {
-	 int n;
+	 int n,c,a=0,b=1,i;
 	 printf("Enter the number\n");
 	 scanf("%d",&n);
 	 
-      if(n%4==0)
-      {
-      	printf("%d year is leaf year",n);
-	  }
-	  else
-	  {
-	  	printf("%d year is not leaf year",n);
-	  }
-  
+	printf("%d,",a);
+	printf("%d,",b);
 	
-
+	for(i=1;i<=n;i++)
+	{
+		c=a+b;
+		printf("%d,",c);
+		a=b;
+		b=c;
+	}
+	
+      
 	 
 }
