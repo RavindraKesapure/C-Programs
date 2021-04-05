@@ -2,16 +2,14 @@
 
 void main()
 {
-	 int n,i,sum=0;
+	 int r;
+	 float area,pi=3.14f;
 	 printf("Enter the number\n");
-	 scanf("%d",&n);
+	 scanf("%d",&r);
 	 
-	 for(i=1;i<=n;i++)
-	 {
-	 	sum=sum+i;
-	 }
+	 area = pi * r* r;
 	 
-	 printf(" sum == %d",sum);
+	 printf(" Area of circle == %f",area);
 
 	 
 }
