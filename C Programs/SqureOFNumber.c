@@ -3,12 +3,9 @@
 void main()
 {
 	 int n;
-	 float area,pi=3.14f;
-	 printf("Enter the area\n");
+	 printf("Enter the number\n");
 	 scanf("%d",&n);
 	 
-	 area = pi*n*n;
-	 printf("area --> %f\n",area);
-
+	 printf("Squre of %d is  %d",n,(n*n));
 	 
 }
