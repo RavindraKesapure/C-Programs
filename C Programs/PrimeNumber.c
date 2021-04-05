@@ -2,37 +2,27 @@
 
 void main()
 {
-	 int n,i,r,sum=0,temp,count=0,arm=0,d;
+	  int n,i,count=0;
 	 printf("Enter the number\n");
 	 scanf("%d",&n);
 	 
-	 temp = n;
-	 while(temp > 0)
-	 {
-	 	temp = temp / 10;
-	 	count++;
+	 
+        for(i=2;i<n;i++)
+       {
+     	       if(n%i==0)
+     	       {
+     		   count=1;
+     		   break;
+		}
 	 }
-	 temp = n;
-	 while(temp > 0)
+	 if(count==0)
 	 {
-	 	  r = temp % 10;
-	 	  arm=1;
-	 	  i=1;
-	 	  while(i <= count)
-	 	  {
-	 	  	 arm = arm * r ;  
-	 	  	 i++;
-		  }
-		  sum = sum + arm;
-		  temp = temp/10;
-	 }	 
-	 if(n == sum)
-	 {
-	 	printf("%d is Armstrong Number ",n);
+	 	printf("%d is prime number ",n);
 	 }
 	 else
 	 {
-	 	printf("%d is not Armstrong Number ",n);
+	 	printf("%d is not prime number ",n);
 	 }
+	
 	 
 }
