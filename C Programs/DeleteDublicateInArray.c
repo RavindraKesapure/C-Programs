@@ -13,11 +13,12 @@ void main()
 		{
 	      if(ch[i]==ch[j])
 	      {
-	      	  for(k=j;k<len;k++)
-	      	  {
+	      	     for(k=j;k<len;k++)
+	      	     {
 	      	  	  ch[k]=ch[k+1];
-			  }
-			  len--;
+			    len--;
+	             }
+			
 			  j--;
 		   }
 	    }
